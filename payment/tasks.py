@@ -30,3 +30,4 @@ def payment_completed(order_id):
 
     # sent e-mail
     email.send()
+    
