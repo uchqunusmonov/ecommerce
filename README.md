@@ -1,1 +1,1 @@
-# ecommerce
+# online shopping app using django
