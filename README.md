@@ -1,35 +1,35 @@
-# online shopping app using django
-# 
-#
-#   Run the following commands to run the app:
+<h5>online shopping app using django
 
-# $ git clone https://github.com/uchqunusmonov/ecommerce.git
 
-# $ python3 -m venv venv
+ Run the following commands to run the app:
 
-# $ source venv/bin/activate
+ $ git clone https://github.com/uchqunusmonov/ecommerce.git
 
-# $ pip install -r requirements.txt
+ $ python3 -m venv venv
 
-# $ python manage.py migrate
+ $ source venv/bin/activate
 
-# $ docker pull rabbitmq
+ $ pip install -r requirements.txt
 
-# $ docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:management
+ $ python manage.py migrate
 
-# Then do this in a new terminal window:
+ $ docker pull rabbitmq
 
-# $ celery -A config worker -l info
+ $ docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:management
 
-# Then run the following command again in a new terminal (You must be registered with Stripe and Stripe CLI for this!)
+ Then do this in a new terminal window:
 
-# $ stripe listen --forward-to localhost:8000/payment/webhook/
+ $ celery -A config worker -l info
 
-# Then run the following command in a new terminal
+ Then run the following command again in a new terminal (You must be registered with Stripe and Stripe CLI for this!)
 
-# $ docker run -it --rm --name redis -p 6379:6379 redis
+ $ stripe listen --forward-to localhost:8000/payment/webhook/
 
-# Then run the following command in a new terminal window
+ Then run the following command in a new terminal
 
-# python manage.py runserver
+ $ docker run -it --rm --name redis -p 6379:6379 redis
 
+ Then run the following command in a new terminal window
+
+ python manage.py runserver
+</h5>
